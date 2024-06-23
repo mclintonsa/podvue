@@ -29,7 +29,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "redux-persist": "^6.0.0",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.11",
     "timeago.js": "^4.0.2",
     "toolkit": "^1.5.4",
     "validator": "^13.9.0",

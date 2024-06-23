@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./utils/Themes";
+import Sidebar from "./components/Sidebar"
 
 const Container = styled.div`
   display: flex;
@@ -17,8 +18,11 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-  <ThemeProvider theme={darkTheme}>
-    <Container>PodVue</Container>
+  <ThemeProvider theme={darkTheme ? darkTheme : lightTheme}>
+    <Container>
+      <Sidebar />
+      PodVue
+      </Container>
   </ThemeProvider>
 
   )
