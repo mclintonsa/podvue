@@ -81,7 +81,7 @@ function App() {
         {uploadOpen && <Upload setUploadOpen={setUploadOpen} />}
         {openplayer && type === 'video' && <VideoPlayer episode={episode} podid={podid} currenttime={currenttime} index={index}/>}
         {openplayer && type === 'audio'  && <AudioPlayer episode={episode} podid={podid} currenttime={currenttime} index={index}/>}
-        <Podstream>
+        <Podvue>
           {menuOpen && <Menu setMenuOpen={setMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode} setUploadOpen={setUploadOpen} setSignInOpen={setSignInOpen}/>}
           <Frame>
             <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} setSignInOpen={setSignInOpen} setSignUpOpen={setSignUpOpen} />
@@ -97,7 +97,7 @@ function App() {
           </Frame>
 
           {open && <ToastMessage open={open} message={message} severity={severity} />}
-        </Podstream>
+        </Podvue>
 
       </BrowserRouter>
 
